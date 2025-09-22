@@ -7,7 +7,7 @@ pipeline {
         PORT = "8081"
 		IMAGE_NAME = 'prashanth2paramaah/hello-world-app:latest'
         VAULT_CRED_ID = 'vault-approle-creds'
-        VAULT_ADDR    = 'http://52.72.235.53:8200'
+        VAULT_ADDR    = 'http://52.90.173.47:8200'
     }
 
     stages {
