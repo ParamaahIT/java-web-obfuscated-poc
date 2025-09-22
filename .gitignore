@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Do not ignore these parent directories
+!target/
+!Dockerfile
+!README.md
+!.gitignore
+
+# Except the obfuscated jar
+!target/java-web-poc-1.0.0-obfuscated.jar
