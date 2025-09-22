@@ -6,6 +6,6 @@
 !Dockerfile
 !README.md
 !.gitignore
-
+!Jenkinsfile
 # Except the obfuscated jar
 !target/java-web-poc-1.0.0-obfuscated.jar
