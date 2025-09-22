@@ -74,6 +74,7 @@ pipeline {
             steps {
                 script {
                     sh """
+                        docker rm -f $CONTAINER_NAME || true
                         docker run -d --name $CONTAINER_NAME -p $PORT:$PORT $IMAGE_NAME
                     """
                 }
