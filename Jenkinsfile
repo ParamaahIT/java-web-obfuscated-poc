@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ParamaahIT/java-web-poc.git'
+                git branch: 'main', url: 'https://github.com/ParamaahIT/java-web-obfuscated-poc.git'
             }
         }
 
