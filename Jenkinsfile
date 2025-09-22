@@ -50,6 +50,25 @@ pipeline {
                 }
             }
         }
+        
+       stage('Push Docker Image') {
+         steps {
+           sh '''
+              docker push $IMAGE_NAME
+      
+            '''
+          }
+        }
+       
+      stage('Pull Docker Image') {
+        steps {
+          sh '''
+            docker pull $IMAGE_NAME
+            docker logout
+      
+           '''
+          }
+        }
 
         stage('Run Docker Container') {
             steps {
