@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "java-web-poc-obf"
         CONTAINER_NAME = "java-web-poc-container"
         PORT = "8081"
-		IMAGE_NAME = 'prashanth2paramaah/hello-world-app:latest'
+	IMAGE_NAME = 'prashanth2paramaah/java-web-poc-obfus:latest'
         VAULT_CRED_ID = 'vault-approle-creds'
         VAULT_ADDR    = 'http://52.90.173.47:8200'
     }
