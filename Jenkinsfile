@@ -6,7 +6,7 @@ pipeline {
         PORT = "8081"
 	IMAGE_NAME = 'prashanth2paramaah/java-web-poc-obfus:latest'
         VAULT_CRED_ID = 'vault-approle-creds'
-        VAULT_ADDR    = 'http://52.90.173.47:8200'
+        VAULT_ADDR    = 'http://3.93.193.240:8200'
     }
 
     stages {
